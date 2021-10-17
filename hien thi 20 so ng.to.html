@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pham Duc Thang</title>
+</head>
+<body>
+
+</body>
+<script>
+    //pp đặt cờ
+    let amount = +prompt("Nhập số lượng SNT cần hiện: ")
+    let count = 0
+    let number = 2
+    while (count < amount) {
+        let check = true
+        for (let i = 2; i <= Math.sqrt(number); i++) {
+            if (number % i === 0) {
+                check = false
+                break
+            }
+        }
+        if (check) {
+            document.write(number + "<br>")
+            count++
+        }
+        number++
+    }
+</script>
+</html>
